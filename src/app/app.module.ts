@@ -2,12 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { ComponentsModule } from './components/components.module';
+
 import { app_routing } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './screens/home/home.component';
-import { MediaComponent } from './components/media/media.component';
 
 const modules = [
+	ComponentsModule,
 	FormsModule,
 	ReactiveFormsModule,
 	BrowserModule,
@@ -17,8 +19,7 @@ const modules = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MediaComponent
+    HomeComponent
   ],
   imports: [
 	  ...modules
