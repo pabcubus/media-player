@@ -1,0 +1,47 @@
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+@media (min-width: 960px) {
+	.fx {
+		&-row {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&-column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-row, &-column {
+			.fx-item {
+				order: 1;
+			}
+			.fx-item-grow {
+				flex-grow: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.fx {
+		&-sm-row {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&-sm-column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-sm-row, &-sm-column {
+			.fx-sm-item {
+				order: 1;
+			}
+			.fx-sm-item-grow {
+				flex-grow: 1;
+			}
+		}
+	}
+}
